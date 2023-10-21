@@ -13,9 +13,12 @@ import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { NavItem } from "@/types/nav";
+import { useTheme } from "next-themes";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
+  const { resolvedTheme } = useTheme();
+  const Logo = resolvedTheme === "dark" ? Icons.darkLogo : Icons.logo;
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -34,10 +37,9 @@ export function MobileNav() {
           className="flex items-center"
           onOpenChange={setOpen}
         >
-          <Icons.logo className="mr-2 h-4 w-4" />
-          <span className="font-bold">{siteConfig.name}</span>
+          <Logo className="h-7 w-auto" />
         </MobileLink>
-        <ScrollArea className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
+        <ScrollArea className="my-6 h-[calc(100vh-8rem)] pb-10">
           <div className="flex flex-col space-y-3">
             {docsConfig.mainNav?.map(
               (item) =>
