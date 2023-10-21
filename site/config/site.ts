@@ -1,11 +1,11 @@
 export const siteConfig = {
-  name: "shadcn/ui",
-  url: "https://ui.shadcn.com",
-  ogImage: "https://ui.shadcn.com/og.jpg",
-  description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+  author: "Aakash N S",
+  name: "Jovian",
+  url: "https://jovian.pages.dev",
+  ogImage: "og.png",
+  description: "Free beginner-friendly and practical online courses.",
   links: {
-    aakashns: "https://github.com/aakashns",
+    author: "https://github.com/aakashns",
     github: "https://github.com/aakashns/jovian",
   },
 };

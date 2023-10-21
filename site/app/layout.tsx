@@ -12,24 +12,23 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
+    default: `${siteConfig.name} | ${siteConfig.description}`,
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
   keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
+    "Jovian",
+    "Free Online Courses",
+    "Data Science",
+    "Machine Learning",
   ],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: siteConfig.author,
+      url: siteConfig.links.author,
     },
   ],
-  creator: "shadcn",
+  creator: siteConfig.author,
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -55,7 +54,6 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@shadcn",
   },
   icons: {
     icon: "/favicon.ico",
@@ -63,7 +61,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-  metadataBase: new URL("https://jovian.com/"),
+  metadataBase: new URL(siteConfig.url),
 };
 
 interface RootLayoutProps {

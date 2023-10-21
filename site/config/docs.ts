@@ -1,4 +1,5 @@
 import { MainNavItem, SidebarNavItem } from "@/types/nav";
+import { siteConfig } from "./site";
 
 interface DocsConfig {
   mainNav: MainNavItem[];
@@ -13,7 +14,7 @@ export const docsConfig: DocsConfig = {
     },
     {
       title: "GitHub",
-      href: "https://github.com/shadcn/ui",
+      href: siteConfig.links.github,
       external: true,
     },
   ],
