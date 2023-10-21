@@ -12,6 +12,7 @@ import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { NavItem } from "@/types/nav";
 
 export function MobileNav() {
   const [open, setOpen] = React.useState(false);
@@ -56,7 +57,7 @@ export function MobileNav() {
               <div key={index} className="flex flex-col space-y-3 pt-6">
                 <h4 className="font-medium">{item.title}</h4>
                 {item?.items?.length &&
-                  item.items.map((item) => (
+                  item.items.map((item: NavItem) => (
                     <React.Fragment key={item.href}>
                       {!item.disabled &&
                         (item.href ? (
