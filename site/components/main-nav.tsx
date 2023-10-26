@@ -32,7 +32,7 @@ export function MainNav() {
           href="https://youtube.com/@jovianhq"
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-colors hover:text-foreground/80"
+          className="transition-colors text-foreground/60 hover:text-foreground/80"
         >
           YouTube
         </Link>
@@ -40,7 +40,7 @@ export function MainNav() {
           href="https://community.jovian.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-colors hover:text-foreground/80"
+          className="transition-colors text-foreground/60 hover:text-foreground/80"
         >
           Community
         </Link>
