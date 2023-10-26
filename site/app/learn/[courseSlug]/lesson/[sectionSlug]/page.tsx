@@ -10,7 +10,7 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-export function SectionVideo({ className }: { className?: string }) {
+function SectionVideo({ className }: { className?: string }) {
   return (
     <AspectRatio ratio={16 / 9} className={cn("bg-muted", className)}>
       <Image
@@ -34,6 +34,7 @@ type LessonPageProps = {
 
 export default function LessonPage({ params }: LessonPageProps) {
   const { courseSlug, sectionSlug } = params;
+  console.log({ courseSlug, sectionSlug });
 
   return (
     <div className="container relative">
