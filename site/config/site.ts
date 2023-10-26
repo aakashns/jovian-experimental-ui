@@ -5,7 +5,7 @@ export const siteConfig = {
   ogImage: "og.png",
   description: "Free beginner-friendly practical online courses",
   links: {
-    author: "https://github.com/aakashns",
+    author: "https://github.com/jovianhq",
     github: "https://github.com/aakashns/jovian",
   },
 };

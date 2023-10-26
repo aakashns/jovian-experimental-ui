@@ -14,7 +14,7 @@ export function MainNav() {
   const Logo = resolvedTheme === "dark" ? Icons.darkLogo : Icons.logo;
 
   return (
-    <div className="hidden md:flex flex-1 mr-2">
+    <div className="hidden md:flex flex-1 mr-4">
       <Link href="/" className="mr-6 flex-1 items-center space-x-2">
         <Logo className="h-7 w-auto" />
       </Link>
@@ -27,6 +27,22 @@ export function MainNav() {
           )}
         >
           Home
+        </Link>
+        <Link
+          href="https://youtube.com/@jovianhq"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors hover:text-foreground/80"
+        >
+          YouTube
+        </Link>
+        <Link
+          href="https://community.jovian.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-colors hover:text-foreground/80"
+        >
+          Community
         </Link>
       </nav>
     </div>
