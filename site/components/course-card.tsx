@@ -4,16 +4,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-
-type CourseCardProps = {
-  id: string;
-  name: string;
-  description: string;
-  cover: string;
-};
-
 import Image from "next/image";
-
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 
 function CourseCover({ src, alt }: { src: string; alt: string }) {
@@ -30,9 +21,17 @@ function CourseCover({ src, alt }: { src: string; alt: string }) {
   );
 }
 
+type CourseCardProps = {
+  id: string;
+  name: string;
+  description: string;
+  cover: string;
+  className: string;
+};
+
 export function CourseCard({ name, description, cover }: CourseCardProps) {
   return (
-    <Card>
+    <Card className="hover:scale-105 transition ease-in-out h-full hover:shadow-md">
       <CourseCover src={cover} alt={name} />
       <CardHeader>
         <CardTitle>{name}</CardTitle>
