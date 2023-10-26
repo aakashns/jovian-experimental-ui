@@ -3,7 +3,7 @@ export const siteConfig = {
   name: "Jovian",
   url: "https://jovian.pages.dev",
   ogImage: "og.png",
-  description: "Free beginner-friendly and practical online courses",
+  description: "Free, beginner-friendly and practical online courses",
   links: {
     author: "https://github.com/aakashns",
     github: "https://github.com/aakashns/jovian",
