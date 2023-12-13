@@ -93,7 +93,7 @@ export default function CoursePage({ params }: CoursePageProps) {
       </PageHeader>
       <div>
         {sections.map((section) => (
-          <Link href="/" key={section.id}>
+          <Link href="/learn/a/lesson/b" key={section.id}>
             <Card className="mb-6 max-w-5xl hover:scale-[1.01] hover:shadow-md">
               <div className="flex">
                 <div className="ml-6 p-6 bg-muted rounded-full self-start my-6">
